@@ -5,8 +5,11 @@
 /tmp
 /out-tsc
 
+/public
+oj-client/dist/
+
 # dependencies
-/node_modules
+node_modules/
 
 # profiling files
 chrome-profiler-events.json

@@ -18,7 +18,17 @@ export class ProblemListComponent implements OnInit {
   }
 
   getProblems(): void {
-    this.problems = this._dataService.getProblems();
+    this._dataService.getProblems().subscribe(
+      data => {
+        this.problems = data;
+      },
+      err => {
+        console.log(err);
+      },
+      () => {
+        console.log('Http request completed!');
+      }
+    );
   }
 
 }

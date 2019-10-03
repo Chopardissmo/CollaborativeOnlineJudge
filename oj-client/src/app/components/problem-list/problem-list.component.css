@@ -5,8 +5,13 @@
 
 .label-difficulty {
   padding-top: 0.6em;
-  color: #fdfdfa;
+  color: #ffffff;
   font-size: 12px;
+}
+
+.prolem-list span {
+  text-align: center;
+  color: #ffffff;
 }
 
 .title {
